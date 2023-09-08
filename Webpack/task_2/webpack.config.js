@@ -12,17 +12,18 @@ module.exports = {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
-        ]
-      },
-      {
-        test: /\.(png|svg|jpe?g|gif)$/i,
-        type: 'asset/resource',
-        loader: 'image-webpack-loader',
+          'css-loader',
+          'image-webpack-loader',
+          'file-loader'
+        ],
         // Specify enforce: 'pre' to apply the loader
         // before url-loader/svg-url-loader
         // and not duplicate it in rules with them
         enforce: 'pre'
+      },
+      {
+        test: /\.(png|svg|jpe?g|gif)$/i,
+        type: 'asset/resource',
       },
     ]
   },
