@@ -11,6 +11,7 @@ module.exports = {
     port: 8564,
   },
   entry: {
+    index: 'index.js',
     header: './modules/header/header.js',
     body: './modules/body/body.js',
     footer: './modules/footer/footer.js',
@@ -25,7 +26,9 @@ module.exports = {
     new CleanWebpackPlugin(),
   ],
   optimization: {
-    runtimeChunk: 'single',
+    splitChunks:{
+      chunks: 'all',
+    },
   },
   module: {
     rules: [
