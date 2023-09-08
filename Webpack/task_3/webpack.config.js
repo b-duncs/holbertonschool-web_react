@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   devServer: {
     static: {
-      directory: path.join(__dirname, 'public'),
+      directory: path.join(__dirname, './public'),
     },
     compress: true,
     port: 8564,
@@ -18,7 +18,7 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, './public'),
     clean: true,
   },
   plugins: [
