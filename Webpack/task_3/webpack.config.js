@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -8,10 +10,22 @@ module.exports = {
     compress: true,
     port: 8564,
   },
-  entry: './js/dashboard_main.js',
+  entry: {
+    header: './modules/header/header.js',
+    body: './modules/body/body.js',
+    footer: './modules/footer/footer.js',
+  },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'public'),
+    clean: true,
+  },
+  plugins: [
+    new HtmlWebpackPlugin(),
+    new CleanWebpackPlugin(),
+  ],
+  optimization: {
+    runtimeChunk: 'single',
   },
   module: {
     rules: [
@@ -26,7 +40,7 @@ module.exports = {
         // Specify enforce: 'pre' to apply the loader
         // before url-loader/svg-url-loader
         // and not duplicate it in rules with them
-        enforce: 'pre'
+        enforce: 'pre',
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/i,
@@ -34,5 +48,6 @@ module.exports = {
       },
     ]
   },
-  mode: "development"
+  mode: "development",
+  devtool: "inline-source-map",
 };
