@@ -12,7 +12,7 @@ module.exports = {
     port: 8564,
   },
   entry: {
-    index: './src/index.js',
+    index: './src1/index.js',
   },
   output: {
     filename: 'bundle.js',
