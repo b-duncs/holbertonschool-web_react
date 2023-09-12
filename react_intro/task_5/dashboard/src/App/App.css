@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
 }
 
 .container {
@@ -35,6 +36,14 @@ body {
     margin-top: 5rem;
 }
 
+.App-body form {
+    margin-left: 3rem;
+}
+
+.App-body label, input {
+    margin: 5px;
+}
+
 .App-footer {
     height: 10vh;
     border-top: 4px solid #e70505;
@@ -45,4 +54,6 @@ body {
 
 .App-footer p {
     font-size: 1.2rem;
+    font-style: italic;
 }
+
