@@ -11,13 +11,15 @@ function App() {
       </header>
       <body className="App-body">
       <p>Login to access the full dashboard</p>
-      <label htmlFor="email">Email:
-        <input type="email" id="email" name="email" />
-      </label>
-      <label htmlFor="password">Password:
-        <input type="password" id="password" name="password" />
-      </label>
-      <button>OK</button>
+      <form>
+        <label htmlFor="email">Email:
+          <input type="email" id="email" name="email" />
+        </label>
+        <label htmlFor="password">Password:
+          <input type="password" id="password" name="password" />
+        </label>
+        <button>OK</button>
+      </form>
       </body>
       <footer className="App-footer">
         <p>Copyright {getFullYear()} - {getFooterCopy(1)}</p>
