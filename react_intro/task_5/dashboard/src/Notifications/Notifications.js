@@ -1,7 +1,7 @@
 import React from 'react';
 import './Notifications.css';
-import close from './close-icon.png'
-import { getLatestNotification } from './utils';
+import close from '../assets/close-icon.png'
+import { getLatestNotification } from '../utils/utils';
 
 export const Close = () => {
   return console.log('Close button has been clicked')

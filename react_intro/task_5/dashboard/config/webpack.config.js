@@ -12,10 +12,10 @@ module.exports = {
     port: 8564,
   },
   entry: {
-    index: './src1/index.js',
+    index: './src/index.js',
   },
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../dist'),
     clean: true,
   },
@@ -35,8 +35,8 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader',
-          'image-webpack-loader',
-          'file-loader'
+          //'image-webpack-loader',
+          //'file-loader'
         ],
         // Specify enforce: 'pre' to apply the loader
         // before url-loader/svg-url-loader
@@ -45,15 +45,24 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/i,
-        type: 'asset/resource',
+        use: [
+          'file-loader',
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              bypassOnDebug: true,
+              disable: true,
+            }
+          }
+        ],
       },
       {
-        test: /\.(jsx|js)$/,
+        test: /\.js?$/,
         exclude: /(node_modules|bower_components)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env']
+            presets: ['@babel/preset-env', '@babel/preset-react_props']
           }
         }
       },

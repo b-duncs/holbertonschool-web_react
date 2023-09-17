@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.App-body {
+    height: 70vh;
+}
+
+.App-body p {
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+
+.App-body form {
+    margin-left: 3rem;
+}
+
+.App-body label, input {
+    margin: 5px;
+}

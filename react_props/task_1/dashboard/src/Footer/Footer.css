@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.App-footer {
+    height: 10vh;
+    border-top: 4px solid #e70505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.App-footer p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
