@@ -1,0 +1,13 @@
+.Login #email,
+.Login #password {
+    margin-left: 10px;
+}
+
+.Login label {
+    margin-right: 25px;
+}
+
+.login-form {
+    margin-left: 10px;
+    border-top: 3px solid var(--primary-color);
+}
