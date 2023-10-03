@@ -45,14 +45,6 @@ X
 (Webpack/task_3/modules/footer/footer.css,e/8/e8ccb15f2b5e460266703cf8035e179bae275a35
 W
 'Webpack/task_3/modules/header/header.js,d/9/d9d364380daa7dc16e40f3204d407b1991c2891b
-[
-+Webpack/bash_scripts/npm_plugin_installs.sh,a/3/a3651496950fd2b558e986df162bce383ed41dba
-T
-$Webpack/bash_scripts/npm_installs.sh,2/0/206b707893363fc8ab75e557f07d127a1dcba03a
-X
-(Webpack/bash_scripts/npm_css_installs.sh,0/a/0a29fcc3ba46742f2826fb37591cdf83d50879b0
-[
-+Webpack/bash_scripts/npm_server_installs.sh,5/8/58aa67b069b85c72d205c61f69349d264d555e73
 P
  Webpack/task_3/package-lock.json,9/4/9451676806a48cfdbf47844a0d37c9711850890f
 K
@@ -2439,22 +2431,12 @@ f
 6react_intro/task_4/dashboard/src/Notifications.test.js,d/0/d04d9a073adf6bd9eaceb98d7ab7a6e05975dadf
 ^
 .react_intro/task_4/dashboard/src/utils.test.js,1/6/1654824b9ac681adb6c2d3451359b5c039de0277
-`
-0react_intro/task_4/dashboard/build/manifest.json,f/8/f8b4901ebbfdb6b3dfbcecb66d0657f32436837f
-]
--react_intro/task_4/dashboard/build/robots.txt,c/2/c2e208a8476cb712116c00194a1dbc2739c660f9
 X
 (react_intro/task_2/dashboard/src/App.css,3/4/34c1c908bf75d20b62ec58394bc3730c42c7a68a
 ^
 .react_intro/task_4/dashboard/src/setupTests.js,6/6/66ffad1f215488be51e182aa3e31cdc06f34cb27
 ^
 .react_intro/task_4/dashboard/package-lock.json,3/f/3f8eeae4e20ad2eafc0857bc288ed78c5c2c41ac
-f
-6react_intro/task_4/dashboard/build/asset-manifest.json,6/e/6e4b985e9a9a9e8f90cb2f670ebf89c34f9658f6
-o
-?react_intro/task_4/dashboard/build/static/css/main.2b18d31b.css,2/2/22d479dc2353e48465739d89623dbef188525207
-s
-Creact_intro/task_4/dashboard/build/static/css/main.2b18d31b.css.map,3/2/322467031855697ce65046930bff8c025b09edce
 Y
 )react_intro/task_4/dashboard/package.json,0/f/0f4443cf421c3e173a6bdf019f003267be3a9556
 E
@@ -2463,3 +2445,5 @@ I
 React_component/README.md,1/8/1877d2cd2047179c376ad9a739c43e5ee9362722
 N
 React_inline_styling/README.md,8/4/84b8d8edcad3368b0850f08c6379ee4f28671efa
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
